@@ -16,8 +16,11 @@
       "status": "PENDING",
       "targetSeconds": [60, 75],
       "file": null,
-      "blockers": ["Actual CodeQL alert must be verified", "App security extension access and approved recorder"],
-      "evidence": []
+      "blockers": ["App security extension access and approved recorder"],
+      "evidence": [
+        "https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/actions/runs/44686397611",
+        "https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/security/code-scanning/1"
+      ]
     },
     {
       "id": "ado-authentication",

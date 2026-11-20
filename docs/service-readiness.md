@@ -6,7 +6,7 @@ No live credentials, deployable vulnerable app, or paid trial is used.
 | Capability | Setup and honest readiness |
 | --- | --- |
 | Fixture quality | Four focused Node tests and syntax checks; passing baseline and one expected PR failure are verified separately. This is not GitHub Code Quality. |
-| Code scanning | Advanced CodeQL workflow, JavaScript/TypeScript, security-extended suite. Published scan and actual alerts must be inspected; results pending initial run. |
+| Code scanning | READY: advanced CodeQL workflow, JavaScript/TypeScript, security-extended suite. Successful scan produced one actual open hostname-regex alert; evidence below. |
 | GitHub Code Quality | Unsupported here: authenticated `GET /repos/roshair/ghcp-app-weareDevelopers-workshop-demos/code-quality/setup` returned HTTP 404, `Code quality is not available for this repository.` No paid activation attempted. |
 | Ordinary secret scanning | Repository API reports `secret_scanning.status=enabled` and `secret_scanning_push_protection.status=enabled`. No sample credentials or intentional secret alerts are created. |
 | AI generic secret detection | Not enabled. Docs require an organization/enterprise-owned repository with GitHub Secret Protection; this is a personally owned repository. Ordinary public secret scanning is not this capability. |
@@ -44,3 +44,17 @@ for networking, redirects, authentication or access control.
 - [App security alert workflow](https://docs.github.com/en/copilot/how-tos/github-copilot-app/view-and-fix-security-alerts)
 - [App pull request workflow](https://docs.github.com/en/copilot/how-tos/github-copilot-app/managing-issues-and-pull-requests)
 - [Computer Use](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/computer-use)
+
+## Verified security and baseline evidence
+
+- [Passing baseline Fixture CI](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/actions/runs/44686397607)
+- [Successful CodeQL training scan](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/actions/runs/44686397611)
+- [Actual open code-scanning alert #1](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/security/code-scanning/1):
+  `js/incomplete-hostname-regexp`, "Incomplete regular expression for hostnames",
+  `training/hostname-regexp.js:3`. API state `open`, inspected 20 November 2026.
+
+The alert is a genuine CodeQL result from an offline training exhibit. Remediation
+escapes the first dot (`/^www\.example\.com$/`); it must reject `wwwXexample.com`.
+Do not dismiss or repair the prepared alert until the presenter is ready to consume
+this starting state. The App security view itself remains a capture prerequisite;
+no screenshot or video of that view was created during setup.
