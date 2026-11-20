@@ -58,3 +58,21 @@ escapes the first dot (`/^www\.example\.com$/`); it must reject `wwwXexample.com
 Do not dismiss or repair the prepared alert until the presenter is ready to consume
 this starting state. The App security view itself remains a capture prerequisite;
 no screenshot or video of that view was created during setup.
+
+## Verified scripted PR evidence
+
+- [Open scripted demo PR](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/pull/1)
+- [Real scripted inline review comment](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/pull/1#discussion_r4639147970),
+  on the changed `src/agenda.js:5` line, requesting floor division without weakening tests.
+- [Expected failing Fixture CI](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/actions/runs/44686646091)
+- [Latest documented main baseline CI](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/actions/runs/44686581912)
+
+The locally verified demo output is exactly four tests, three passing, one failing:
+`preserves remaining minutes`, expected `1h 30m`, actual `2h 30m`. Syntax checks pass.
+Only the demo branch introduces the rounding regression. Both the PR body and the
+posted inline comment explicitly disclose their scripted purpose.
+
+Live PR inspection confirmed `state=open`, `merged=false`, `auto_merge=null`.
+App Agent Merge inspection confirmed `enabled=false`, `merge_pr=false`,
+`last_run_at=null`. It was not activated, and no approval/request-changes review
+was submitted against the owner's own PR.
