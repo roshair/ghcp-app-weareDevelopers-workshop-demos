@@ -1,7 +1,7 @@
 # Workshop presenter demos
 
 Presenter-only fixtures for **GitHub Copilot App**, WeAreDevelopers India,
-**25 November 2026, 15:30-17:30 IST**, with **Romaan Shair and Siddhat Joshi**.
+**25 November 2026, 15:30-17:30 IST**, with **Romaan Shair and Siddharth Joshi**.
 This is a public, synthetic, nonproduction repository, not an attendee exercise.
 
 ## Instructor workspace, not the participant pack
