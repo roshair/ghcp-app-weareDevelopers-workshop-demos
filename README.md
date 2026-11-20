@@ -38,7 +38,7 @@ single regression in a new labelled PR with presenter approval if necessary;
 do not force-push over someone else's work.
 
 The isolated static-analysis exhibit in `training/hostname-regexp.js` has an
-unescaped dot in a reserved `example.com` hostname expression. It is not imported,
+unescaped subdomain dot in a reserved `www.example.com` hostname expression. It is not imported,
 exposed over HTTP, or used for access control. It exists to attempt a genuine
 hostname-regex CodeQL finding, not to simulate an alert or provide a vulnerable
 service. CodeQL results must be verified before

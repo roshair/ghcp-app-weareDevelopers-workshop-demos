@@ -30,7 +30,10 @@ The first scan succeeded with zero alerts: MD5 applied to nonsensitive public la
 did not produce a security finding. That exhibit was replaced by an offline,
 reserved-domain regex exhibit based on the documented
 [incomplete hostname regex query](https://codeql.github.com/codeql-query-help/javascript/js-incomplete-hostname-regexp/).
-It deliberately matches `exampleXcom` as well as `example.com`; it is never used
+The initial bare-domain regex also returned zero findings: this query explicitly
+excludes the dot immediately before a top-level domain. The final exhibit uses
+an unescaped subdomain separator, matching `wwwXexample.com` as well as
+`www.example.com`; it is never used
 for networking, redirects, authentication or access control.
 
 ## Source references
