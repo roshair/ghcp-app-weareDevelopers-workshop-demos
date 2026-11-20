@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-11-20",
+  "recordingsAreCaptured": false,
+  "captureMethod": "Presenter-approved recorder, human-operated permissions and authentication",
+  "items": [
+    {
+      "id": "agent-merge",
+      "status": "PENDING",
+      "targetSeconds": [75, 90],
+      "file": null,
+      "blockers": ["Approved recorder and presenter approval for live repair actions", "Capture consumes the red PR starting state"],
+      "evidence": []
+    },
+    {
+      "id": "security-findings",
+      "status": "PENDING",
+      "targetSeconds": [60, 75],
+      "file": null,
+      "blockers": ["Actual CodeQL alert must be verified", "App security extension access and approved recorder"],
+      "evidence": []
+    },
+    {
+      "id": "ado-authentication",
+      "status": "PENDING",
+      "targetSeconds": [60, 90],
+      "file": null,
+      "blockers": ["No authorized ADO tenant/project/work item supplied", "Integration access, human sign-in/consent and redaction review"],
+      "evidence": []
+    },
+    {
+      "id": "computer-use",
+      "status": "PENDING",
+      "targetSeconds": [60, 75],
+      "file": null,
+      "blockers": ["Human-granted Accessibility and Screen Recording permissions", "Approved external recorder; Computer Use has no video export"],
+      "evidence": []
+    }
+  ]
+}

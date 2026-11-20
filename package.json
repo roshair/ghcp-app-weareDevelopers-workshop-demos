@@ -1,0 +1,14 @@
+{
+  "name": "copilot-workshop-presenter-demos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline, synthetic presenter fixtures for WeAreDevelopers India",
+  "engines": {
+    "node": "24.22.2"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check src/agenda.js && node --check training/legacy-digest.js"
+  }
+}
