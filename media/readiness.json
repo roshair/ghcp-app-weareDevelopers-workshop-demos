@@ -9,7 +9,11 @@
       "targetSeconds": [75, 90],
       "file": null,
       "blockers": ["Approved recorder and presenter approval for live repair actions", "Capture consumes the red PR starting state"],
-      "evidence": []
+      "evidence": [
+        "https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/pull/1",
+        "https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/pull/1#discussion_r4639147970",
+        "https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/actions/runs/44686646091"
+      ]
     },
     {
       "id": "security-findings",

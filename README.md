@@ -20,7 +20,8 @@ npm test
 ```
 
 `main` must pass all four tests. `formatDuration(120)` returns `2h 0m`.
-The labelled demo PR deliberately changes hour calculation to introduce one
+[The labelled demo PR](https://github.com/roshair/ghcp-app-weareDevelopers-workshop-demos/pull/1)
+deliberately changes hour calculation to introduce one
 deterministic failure for the existing 90-minute test. Its red CI and explicitly
 scripted inline review comment are the real Agent Merge repair exercise.
 Do not delete or weaken tests to fix it; restore correct hour calculation.
