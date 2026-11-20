@@ -4,6 +4,22 @@ Presenter-only fixtures for **GitHub Copilot App**, WeAreDevelopers India,
 **25 November 2026, 15:30-17:30 IST**, with **Romaan Shair and Siddhat Joshi**.
 This is a public, synthetic, nonproduction repository, not an attendee exercise.
 
+## Instructor workspace, not the participant pack
+
+**Romaan and Siddhat:** start with the [canonical instructor runbook](docs/instructor.md)
+for the full running order, suggested presenter roles, preflight, demo evidence,
+fallbacks and exactly what to share before/during/after the workshop.
+
+**Share only the [attendee landing page](https://roshair.github.io/ghcp-app-weareDevelopers-workshop/)
+and [attendee repository](https://github.com/roshair/ghcp-app-weareDevelopers-workshop)
+as the participant pack.** Do not put this repository, instructor notes, prepared
+review scripts or demonstration answers in attendee handouts or QR codes.
+
+This repository is currently **public**, so anyone with its URL can read it.
+"Instructor-only" describes its intended audience, not an access restriction.
+There has been no visibility, access or history change. Do not store confidential
+instructor or participant information here.
+
 Attendee materials live independently at
 [ghcp-app-weareDevelopers-workshop](https://github.com/roshair/ghcp-app-weareDevelopers-workshop).
 Nothing here imports attendee code or requires external network services.
