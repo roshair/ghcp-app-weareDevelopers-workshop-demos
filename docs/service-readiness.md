@@ -26,6 +26,13 @@ No live credentials, deployable vulnerable app, or paid trial is used.
 A 404 is an observed availability blocker, not proof of a particular account's
 billing plan. Local tests and CodeQL security scans cannot substitute for Code Quality.
 
+The first scan succeeded with zero alerts: MD5 applied to nonsensitive public labels
+did not produce a security finding. That exhibit was replaced by an offline,
+reserved-domain regex exhibit based on the documented
+[incomplete hostname regex query](https://codeql.github.com/codeql-query-help/javascript/js-incomplete-hostname-regexp/).
+It deliberately matches `exampleXcom` as well as `example.com`; it is never used
+for networking, redirects, authentication or access control.
+
 ## Source references
 
 - [Code Quality REST API](https://docs.github.com/en/rest/code-quality/code-quality)

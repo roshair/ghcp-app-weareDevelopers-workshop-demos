@@ -37,10 +37,11 @@ the linked PR and checks rather than assuming it is still red. Recreate the
 single regression in a new labelled PR with presenter approval if necessary;
 do not force-push over someone else's work.
 
-The isolated static-analysis exhibit in `training/legacy-digest.js` uses MD5 on
-public labels. It is not imported, exposed over HTTP, or used for authentication.
-It exists to attempt a genuine weak-cryptography CodeQL finding, not to simulate
-an alert or provide a vulnerable service. CodeQL results must be verified before
+The isolated static-analysis exhibit in `training/hostname-regexp.js` has an
+unescaped dot in a reserved `example.com` hostname expression. It is not imported,
+exposed over HTTP, or used for access control. It exists to attempt a genuine
+hostname-regex CodeQL finding, not to simulate an alert or provide a vulnerable
+service. CodeQL results must be verified before
 claiming a finding. Its presence does not cause baseline test/CI failures.
 
 See [service readiness](docs/service-readiness.md),

@@ -9,6 +9,6 @@
   },
   "scripts": {
     "test": "node --test",
-    "check": "node --check src/agenda.js && node --check training/legacy-digest.js"
+    "check": "node --check src/agenda.js && node --check training/hostname-regexp.js"
   }
 }

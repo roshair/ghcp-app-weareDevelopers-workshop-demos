@@ -36,7 +36,7 @@ Start: CodeQL analysis and the real alert visible; no secret-scanning page subst
 | Time | Shot and narration |
 | --- | --- |
 | 0-15s | Show successful CodeQL scan: "This is a real GitHub CodeQL result, not a local review." |
-| 15-35s | Open actual finding with rule and location: "The isolated public-label digest is a training exhibit, not deployed authentication." |
+| 15-35s | Open actual finding with rule and location: "The isolated hostname expression is a training exhibit, not a deployed allowlist." |
 | 35-55s | Show supported App security view and remediation explanation; request a fix only in an isolated branch with approval. |
 | 55-75s | Show provenance: "Code scanning, Code Quality and secret scanning are different services. AI generic secrets are unavailable in this personal repository." |
 
